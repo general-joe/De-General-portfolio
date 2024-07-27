@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
       <img src="./assets/header-bg-color.png" alt="" class="w-full ">
     </div>
@@ -35,9 +35,31 @@
       class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 ">
       Contact <img src="./assets/arrow-icon.png" alt="" 
       class="w-3 " /></a>
+
+      <button class="block md:hidden ml-3" onclick="openMenu()">
+        <img src="./assets/menu-black.png" alt="" class="w-6 ">
+      </button>
       </div>
 
 
+      <!-- Mobile menu -->
+       <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed 
+       -right-64 top-0 bottom-0 w-64 z-50 h-screen
+        bg-rose-50 transition duration-500 ">
+
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img src="./assets/close-black.png" alt="" class="w-5 cursor-pointer">
+        </div>
+        <li><a href="#top"      onclick="closeMenu()">Home</a></li>
+        <li><a href="#about"    onclick="closeMenu()">About me</a></li>
+        <li><a href="#services" onclick="closeMenu()" >Services</a></li>
+        <li><a href="#work"     onclick="closeMenu()"  >My work</a></li>
+        <li><a href="#contact"  onclick="closeMenu()"  >Contact me</a></li>
+
+       </ul>
+
+
     </nav>
+    <script src="./script.js"></script>
   </body>
 </html>
