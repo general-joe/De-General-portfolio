@@ -8,17 +8,20 @@
   </head>
   <body class="overflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
-      <img src="./assets/header-bg-color.png" alt="" class="w-full ">
+      <img src="./assets/header-bg-color.png" alt="" class="w-full" />
     </div>
 
-
-
-
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-      <img src="./assets/logo.png" alt="Logo"
-       class="w-28 cursor-pointer mr-14 " />
-      <ul class="hidden md:flex items-center gap-6 lg:gap-8 
-      rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <img
+        src="./assets/logo_degeneral.jpg"
+        alt="Logo"
+        class="w-28 cursor-pointer mr-14"
+      />
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
+      >
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#services">Services</a></li>
@@ -26,40 +29,58 @@
         <li><a href="#contact">Contact me</a></li>
       </ul>
       <div class="flex items-center gap-4">
-        
-      <button><img src="./assets//moon_icon.png" alt=""
-         class="w-6"></button>
+        <button>
+          <img src="./assets//moon_icon.png" alt="" class="w-6" />
+        </button>
 
+        <a
+          href="#contact"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+        >
+          Contact <img src="./assets/arrow-icon.png" alt="" class="w-3"
+        /></a>
 
-      <a href="#contact" 
-      class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 ">
-      Contact <img src="./assets/arrow-icon.png" alt="" 
-      class="w-3 " /></a>
-
-      <button class="block md:hidden ml-3" onclick="openMenu()">
-        <img src="./assets/menu-black.png" alt="" class="w-6 ">
-      </button>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="./assets/menu-black.png" alt="" class="w-6" />
+        </button>
       </div>
 
-
       <!-- Mobile menu -->
-       <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed 
-       -right-64 top-0 bottom-0 w-64 z-50 h-screen
-        bg-rose-50 transition duration-500 ">
-
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500"
+      >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
-          <img src="./assets/close-black.png" alt="" class="w-5 cursor-pointer">
+          <img
+            src="./assets/close-black.png"
+            alt=""
+            class="w-5 cursor-pointer"
+          />
         </div>
-        <li><a href="#top"      onclick="closeMenu()">Home</a></li>
-        <li><a href="#about"    onclick="closeMenu()">About me</a></li>
-        <li><a href="#services" onclick="closeMenu()" >Services</a></li>
-        <li><a href="#work"     onclick="closeMenu()"  >My work</a></li>
-        <li><a href="#contact"  onclick="closeMenu()"  >Contact me</a></li>
-
-       </ul>
-
-
+        <li><a href="#top" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About me</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#work" onclick="closeMenu()">My work</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+      </ul>
     </nav>
+
+    <!-------------------- header -------------------------------------->
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+    >
+      <img src="./assets/profile-img.png" alt="" class="rounded-full w-32" />
+      <h3>
+        Hi! i am Amankona Joseph
+        <img src="./assets/hand-icon.png" alt="" class="w-6" />
+      </h3>
+      <h1>Backend web developer based in Ghana</h1>
+      <p>
+        I am a backend developer from Ghana, with 4 years of experience in
+        multiple companies like Microsoft, ChippyCode, Tesla and Apple.
+      </p>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
