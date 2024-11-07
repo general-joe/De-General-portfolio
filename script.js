@@ -68,3 +68,25 @@ function toggleTheme() {
     localStorage.theme = "light";
   }
 }
+
+//Reset form after submition
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+
+      form.reset();
+    })
+    .catch((error) => {
+      console.error("Error submitting the form:", error);
+    });
+});
